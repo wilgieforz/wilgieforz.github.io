@@ -2,7 +2,12 @@
 
 # dependencies
 /node_modules
-/.idea
+
+*.xml
+*.iml
+.idea
+out
+
 /sass
 *.sass
 
