@@ -1406,10 +1406,15 @@ template {
   }
 
   .button {
-    width: 110px;
+    width: 120px;
     font-size: 10px;
     height: 25px;
     margin-top: 5px;
+  }
+  .button_main {
+    width: 200px;
+    font-size: 12px;
+    height: 30px;
   }
 
   .advantages__items {
@@ -1443,12 +1448,6 @@ template {
   }
   .promo__link {
     font-size: 12px;
-  }
-
-  .button_main {
-    width: 180px;
-    font-size: 12px;
-    height: 30px;
   }
 
   .xs_container {
