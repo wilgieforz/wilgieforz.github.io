@@ -1,0 +1,37 @@
+* {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.promo {
+  position: relative;
+  min-height: 100vh;
+  background: url("../img/promo_bg.jpg") center center/cover no-repeat;
+}
+.promo__black-view {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.57);
+  width: 100%;
+  min-height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: blueviolet;
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-start;
+  color: #fff;
+}
+ul li {
+  list-style: none;
+  margin: 0 25px 0 25px;
+}
+
+/*# sourceMappingURL=style.css.map */
