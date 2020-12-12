@@ -1,37 +1,132 @@
-* {
-  font-size: 24px;
-  margin: 0;
-  padding: 0;
+.title {
+  color: #fff;
+}
+.title_nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title_promo {
+  margin-top: 50px;
+  font-size: 55px;
+}
+.title_second {
+  color: #000;
+  font-size: 42px;
+  text-align: center;
 }
 
 .promo {
   position: relative;
-  min-height: 100vh;
-  background: url("../img/promo_bg.jpg") center center/cover no-repeat;
+  min-height: 650px;
 }
 .promo__black-view {
   position: absolute;
+  top: 0;
   background: rgba(0, 0, 0, 0.57);
   width: 100%;
   min-height: 100%;
 }
 
-a {
-  text-decoration: none;
+.nav {
+  position: relative;
+  margin-top: 35px;
 }
-a:hover {
-  color: blueviolet;
+.nav__wrapper {
+  display: flex;
+  height: 50px;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 80%;
+}
+.nav__list ul {
+  display: flex;
+}
+.nav__list ul li {
+  list-style: none;
+  padding: 20px;
+}
+.nav__list ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.4s all;
+  -webkit-transition: 0.4s ease-out;
+}
+.nav__list ul li a:hover {
+  color: #35a22c;
   text-decoration: none;
 }
 
-ul {
-  display: flex;
-  justify-content: flex-start;
-  color: #fff;
+.info {
+  padding-top: 50px;
+  width: 100%;
+  text-align: center;
 }
-ul li {
-  list-style: none;
-  margin: 0 25px 0 25px;
+.info__img {
+  margin-top: 30px;
+}
+.info__img img {
+  border: 3px solid #fff;
+  border-radius: 100%;
+  height: 150px;
+  width: auto;
+}
+.info__subtitle {
+  color: #fff;
+  font-size: 24px;
+  margin: 24px 0 48px 0;
+}
+
+.main-information {
+  padding: 40px 0 40px 0;
+}
+.main-information__wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.main-information__item {
+  width: 285px;
+}
+.main-information .item__icon {
+  text-align: center;
+}
+.main-information .item__icon img {
+  border-radius: 100%;
+  height: 100px;
+  width: 100px;
+}
+.main-information .item__title {
+  text-align: center;
+  font-weight: 700;
+  margin-top: 15px;
+}
+.main-information .item__descr {
+  text-align: center;
+  margin-top: 15px;
+}
+.main-information .main-information__item:nth-child(4) img {
+  border-radius: 0;
+}
+.main-information .main-information__item:nth-child(n+5) {
+  margin-top: 50px;
+}
+
+* {
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

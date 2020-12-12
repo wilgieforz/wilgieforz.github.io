@@ -5,21 +5,135 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,700;1,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="PromoPage/css/style.css">
-    <title>My Projects</title>
+    <title>Портфолио Егора Солдатова</title>
 </head>
 <body>
-    <div class="promo">
+    <section class="promo">
         <div class="promo__black-view">
-            <div class="projects-list">
-                <ul>
-                    My projects:
-                    <li><a href="/Pulse">Pulse</a><br></li>
-                    <li><a href="/UberProject">Uber Site</a><br></li>
-                    <li><a href="/equipmentBlock">Equipment Block</a></li>
-                </ul>
+            <div class="container">
+                <div class="nav">
+                    <div class="nav__wrapper">
+                        <div class="title title_nav">
+                            LOGO WILGIEFORZ
+                        </div>
+                        <div class="nav__list">
+                            <!--<ul>
+                                <li><a href="/Pulse">Pulse</a><br></li>
+                                <li><a href="/UberProject">Uber Site</a><br></li>
+                                <li><a href="/equipmentBlock">Equipment Block</a></li>
+                            </ul>-->
+                            <ul>
+                                <li><a href="#">Основная информация</a><br></li>
+                                <li><a href="#">Обо мне</a><br></li>
+                                <li><a href="#">Мои работы</a><br></li>
+                                <li><a href="#">Мои отзывы</a></li>
+                                <li><a href="#">Мои контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <div class="info__wrapper">
+                        <div class="info__img">
+                            <img src="PromoPage/img/mainPhoto.jpg" alt="Photo">
+                        </div>
+                        <div class="title title_promo">
+                            Привет, меня зовут Егор
+                        </div>
+                        <div class="info__subtitle">
+                            Я начинающий веб-разработчик
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <section class="main-information">
+        <div class="container">
+            <div class="title title_second">Мои навыки</div>
+            <div class="main-information__wrapper">
+                <div class="main-information__item">
+                    <div class="item__icon"><img src="PromoPage/icons/item_1.jpg" alt="item 1"></div>
+                    <div class="item__title">
+                        Кроссбраузерная вёрстка
+                    </div>
+                    <div class="item__descr">
+                        Идентичное отображение<br>
+                        сайта во всех браузерах
+                    </div>
+                </div>
+                <div class="main-information__item">
+                    <div class="item__icon"><img src="PromoPage/icons/item_2.svg" alt="item 2"></div>
+                    <div class="item__title">
+                        Методология БЭМ
+                    </div>
+                    <div class="item__descr">
+                        Сайт будет легок в <br>
+                        изменениях и дополнениях
+                    </div>
+                </div>
+                <div class="main-information__item">
+                    <div class="item__icon"><img src="PromoPage/icons/item_3.png" alt="item 3"></div>
+                    <div class="item__title">
+                        Валидная вёрстка
+                    </div>
+                    <div class="item__descr">
+                        В соответствии со<br>
+                        стандартом W3C
+                    </div>
+                </div>
+                <div class="main-information__item">
+                    <div class="item__icon"><img src="PromoPage/icons/item_4.svg" alt="item 4"></div>
+                    <div class="item__title">
+                        Адаптивность
+                    </div>
+                    <div class="item__descr">
+                        Правильное отображение сайта<br>
+                        на различных устройствах
+                    </div>
+                </div>
+                <div class="main-information__item">
+                    <div class="item__icon"><img src="PromoPage/icons/item_5.jpg" alt="item 4"></div>
+                    <div class="item__title">
+                        JavaScript
+                    </div>
+                    <div class="item__descr">
+                        Создание интерактивности<br>
+                        и анимаций сайта
+                    </div>
+                </div>
+                <div class="main-information__item">
+                    <div class="item__icon"><img src="PromoPage/icons/item_6.svg" alt="item 4"></div>
+                    <div class="item__title">
+                        jQuery
+                    </div>
+                    <div class="item__descr">
+                        Библиотека JavaScript,
+                        содержащая в себе готовые функции языка
+                    </div>
+                </div>
+                <div class="main-information__item">
+                    <div class="item__icon"><img src="PromoPage/icons/item_7.svg" alt="item 4"></div>
+                    <div class="item__title">
+                        SASS (SCSS)
+                    </div>
+                    <div class="item__descr">
+                        Расширение CSS, которое придаёт
+                        мощи и элегантности этому языку
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="PromoPage/js/jquery-3.5.1.min.js"></script>
+    <script src="PromoPage/js/parallax.min.js"></script>
+    <script src="PromoPage/js/script.js"></script>
 </body>
 </html>
