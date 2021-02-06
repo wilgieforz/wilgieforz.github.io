@@ -794,6 +794,9 @@
     font-size: 20px;
     font-weight: 300;
   }
+  .nav__list .nav__menu .menu__item:nth-child(4) {
+    display: none;
+  }
   .nav__list .nav__menu_active {
     left: 0;
     width: 87%;
