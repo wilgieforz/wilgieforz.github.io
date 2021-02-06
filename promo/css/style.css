@@ -91,18 +91,18 @@
 .nav__list .nav__menu {
   display: flex;
 }
-.nav__list .nav__menu li {
+.nav__list .nav__menu .menu__item {
   list-style: none;
   padding: 20px;
 }
-.nav__list .nav__menu li a {
+.nav__list .nav__menu .menu__item a {
   text-decoration: none;
   color: #fff;
   transition: 0.4s all;
   -webkit-transition: 0.4s ease-out;
 }
-.nav__list .nav__menu li a:hover {
-  color: #35a22c;
+.nav__list .nav__menu .menu__item a:hover {
+  color: #40a762;
   text-decoration: none;
 }
 
