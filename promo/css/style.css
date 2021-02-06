@@ -1,3 +1,17 @@
+* {
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .title {
   color: #fff;
   text-align: center;
@@ -41,6 +55,10 @@
   margin-left: 10px;
 }
 
+.hamburger {
+  display: none;
+}
+
 .promo {
   position: relative;
   min-height: 650px;
@@ -70,20 +88,20 @@
   justify-content: flex-end;
   width: 100%;
 }
-.nav__list ul {
+.nav__list .nav__menu {
   display: flex;
 }
-.nav__list ul li {
+.nav__list .nav__menu li {
   list-style: none;
   padding: 20px;
 }
-.nav__list ul li a {
+.nav__list .nav__menu li a {
   text-decoration: none;
   color: #fff;
   transition: 0.4s all;
   -webkit-transition: 0.4s ease-out;
 }
-.nav__list ul li a:hover {
+.nav__list .nav__menu li a:hover {
   color: #35a22c;
   text-decoration: none;
 }
@@ -128,6 +146,13 @@
   margin-right: -140px;
   margin-left: -140px;
 }
+.main-information__item:nth-child(4) .img__item-icon {
+  border-radius: 0;
+}
+.main-information__item:nth-child(n+5) {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
 .main-information .item__icon {
   text-align: center;
 }
@@ -148,13 +173,6 @@
   margin-top: -10px;
   opacity: 0;
   transition: 0.4s all;
-}
-.main-information .main-information__item:nth-child(4) .img__item-icon {
-  border-radius: 0;
-}
-.main-information .main-information__item:nth-child(n+5) {
-  margin-top: 50px;
-  margin-bottom: 100px;
 }
 
 .about-me {
@@ -442,6 +460,9 @@
   display: flex;
   justify-content: space-around;
 }
+.contacts__item:first-child {
+  font-weight: 900;
+}
 .contacts__item-logo {
   height: 290px;
   width: 290px;
@@ -454,6 +475,7 @@
 .contacts__item-title {
   text-align: center;
   margin-top: 10px;
+  font-weight: 400;
 }
 .contacts__item-title a {
   text-decoration: none;
@@ -478,20 +500,6 @@
   text-align: center;
 }
 
-* {
-  font-family: "Jost", sans-serif;
-  font-size: 18px;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.container {
-  max-width: 1230px;
-  margin: 0 auto;
-  padding: 0;
-}
-
 .pageup {
   display: none;
   position: fixed;
@@ -502,6 +510,389 @@
 }
 .pageup img {
   width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 850px;
+  }
+
+  .nav__list .nav__menu .menu__item {
+    padding: 15px;
+  }
+  .nav__wrapper .logo_wilgieforz {
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+
+  .title_nav {
+    width: 0;
+  }
+  .title_promo {
+    margin-top: 45px;
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .main-information__item {
+    width: 283px;
+  }
+  .main-information__item:nth-child(6) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .main-information__item:nth-child(4) .img__item-icon {
+    border-radius: 0;
+  }
+  .main-information__item:nth-child(n+5) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .main-information__item:nth-child(n+4) {
+    margin-top: 40px;
+  }
+  .main-information__item:last-child {
+    color: #fff;
+  }
+  .main-information__item .item__title {
+    font-size: 16px;
+  }
+  .main-information__item .item__descr {
+    opacity: 1;
+    margin-top: 2px;
+    font-size: 16px;
+  }
+
+  .about-me__item:nth-child(2) {
+    margin-left: 20px;
+    margin-right: 40px;
+  }
+  .about-me .item__title {
+    font-size: 18px;
+  }
+  .about-me .item__descr {
+    font-size: 16px;
+  }
+
+  .my-works__item:nth-child(n+3) {
+    margin-top: 50px;
+  }
+
+  .slide-row {
+    left: 150px;
+  }
+
+  .slider-arrows {
+    margin: 0 325px;
+  }
+
+  .contacts__item:first-child {
+    font-weight: 900;
+  }
+  .contacts__item-logo {
+    width: 250px;
+    height: 250px;
+    filter: grayscale(0);
+  }
+  .contacts__item-title {
+    font-weight: 400;
+  }
+  .contacts__item-descr {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    max-width: 630px;
+  }
+
+  .promo {
+    min-height: 585px;
+  }
+
+  .nav__list {
+    justify-content: center;
+  }
+  .nav__list .nav__menu .menu__item {
+    padding: 7px 20px 7px 7px;
+  }
+  .nav__list .nav__menu .menu__item a {
+    font-size: 16px;
+  }
+  .nav__wrapper .logo_wilgieforz {
+    display: none;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+  .title_promo {
+    margin-top: 40px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .main-information {
+    min-height: 1155px;
+  }
+  .main-information__item:nth-child(n+3) {
+    margin-top: 40px;
+  }
+
+  .about-me {
+    padding: 40px 0 60px 0;
+  }
+
+  .my-works__item {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .my-works__item:nth-child(n+2) {
+    margin-top: 40px;
+  }
+
+  .slide-row {
+    left: 0;
+  }
+
+  .slider-arrows {
+    margin: 0 187.5px;
+  }
+
+  .contacts__item-logo {
+    width: 220px;
+    height: 220px;
+  }
+
+  .footer {
+    padding: 5px 0 5px 0;
+    height: 50px;
+  }
+  .footer__wrapper {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 550px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .nav__list {
+    justify-content: center;
+  }
+  .nav__list .nav__menu .menu__item {
+    padding: 7px 14px 0 0;
+  }
+  .nav__list .nav__menu .menu__item a {
+    font-size: 14px;
+  }
+
+  .main-information {
+    min-height: 1590px;
+    background: #efedee;
+  }
+  .main-information__item:nth-child(n+2) {
+    margin-top: 20px;
+  }
+  .main-information__item:nth-child(n+6) {
+    color: #000;
+  }
+  .main-information__item .item__descr {
+    display: none;
+  }
+
+  .about-me__wrapper {
+    display: block;
+  }
+  .about-me__item {
+    margin: 0 auto;
+    width: 355px;
+  }
+  .about-me__item:nth-child(2) {
+    margin: 0 auto;
+  }
+  .about-me .item__title {
+    margin-top: 20px;
+  }
+  .about-me .item__descr {
+    margin-top: 15px;
+  }
+
+  .my-works {
+    background: url("../img/my-work_bg_small.jpg") center center/cover no-repeat;
+  }
+  .my-works .show {
+    flex-direction: column;
+  }
+  .my-works .btn-wrapper .tab-button {
+    width: 130px;
+    font-size: 16px;
+    line-height: 40px;
+  }
+  .my-works .item__round {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+  }
+  .my-works .item-laptop {
+    height: 157px;
+    width: 276px;
+    transform: translate(-13px, 57px);
+  }
+  .my-works .item-laptop a img {
+    height: 120px;
+    width: 189.5px;
+    transform: translate(43px, 12px);
+  }
+  .my-works .item-desktop {
+    height: 177px;
+    width: 212px;
+    transform: translate(19px, 57px);
+  }
+  .my-works .item-desktop a img {
+    height: 114px;
+    width: 208px;
+    transform: translate(0, 0);
+  }
+
+  .contacts {
+    background: url("../img/my-work_bg_small.jpg") center center/cover no-repeat;
+  }
+}
+@media (max-width: 575px) {
+  .container {
+    width: 300px;
+  }
+
+  .promo {
+    min-height: 465px;
+  }
+
+  .nav__list .nav__menu {
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: 50%;
+    text-align: center;
+    padding: 20px 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.6s all;
+  }
+  .nav__list .nav__menu .menu__item {
+    padding: 7px 20px 7px 7px;
+    margin-bottom: 20px;
+  }
+  .nav__list .nav__menu .menu__item a {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .nav__list .nav__menu_active {
+    left: 0;
+    width: 87%;
+    z-index: 9999;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 5%;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 12px;
+  }
+  .hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 2px;
+    transition: 0.5s all;
+  }
+  .hamburger_active span {
+    margin-bottom: -2px;
+  }
+  .hamburger_active span:nth-child(1) {
+    transform: translateY(3px) rotate(-45deg);
+  }
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  .hamburger_active span:nth-child(3) {
+    transform: translateY(3px) rotate(45deg);
+  }
+
+  .info {
+    padding-top: 0;
+  }
+  .info__img {
+    margin-top: 0;
+  }
+  .info__subtitle {
+    font-size: 20px;
+  }
+
+  .pageup {
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+  .title_promo {
+    font-size: 30px;
+  }
+
+  .about-me__subtitle {
+    font-size: 20px;
+  }
+  .about-me__item {
+    width: 245px;
+  }
+  .about-me__item .item__descr {
+    margin-top: 20px;
+  }
+  .about-me__item .item__descr::before {
+    margin-left: -25px;
+  }
+  .about-me__item .item__descr::after {
+    margin-left: -6px;
+  }
+  .about-me__item .item__title {
+    margin-top: 30px;
+  }
+
+  .my-works .btn-wrapper {
+    display: block;
+  }
+  .my-works .btn-wrapper .tab-button {
+    width: 160px;
+    margin: 10px auto 0;
+  }
+
+  .slider-block {
+    display: none;
+  }
+
+  .contacts__wrapper {
+    display: block;
+  }
+  .contacts__item-logo {
+    display: block;
+    margin: 0 auto;
+  }
+  .contacts__item:nth-child(n+2) {
+    margin-top: 30px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
